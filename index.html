@@ -1,40 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Invitation page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitation Eco-Bin</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #a8e063, #56ab2f);
+      color: #fff;
       text-align: center;
-      margin-top: 100px;
+      padding: 50px 20px;
+      margin: 0;
     }
-    button {
-      padding: 15px 30px;
-      font-size: 18px;
-      cursor: pointer;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 5px;
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     }
-    button:hover {
-      background-color: #45a049;
+
+    p {
+      font-size: 20px;
+      margin: 15px 0;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     }
-    .warning {
-      color: red;
+
+    .button-container {
+      margin: 30px 0;
+    }
+
+    .download-btn {
+      padding: 18px 40px;
+      font-size: 20px;
       font-weight: bold;
-      margin-top: 20px;
+      cursor: pointer;
+      background-color: #ffffff;
+      color: #4CAF50;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .download-btn:hover {
+      background-color: #f1f1f1;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .warning {
+      color: #ff4444;
+      font-weight: bold;
+      margin-top: 25px;
+      font-size: 18px;
+    }
+
+    .note {
+      font-size: 16px;
+      margin-top: 10px;
+      color: #fff;
+      opacity: 0.9;
     }
   </style>
 </head>
 <body>
-  <h1>Bienvenue !!</h1>
-  <p>Veuillez cliquer sur le bouton ci-dessous pour installer l'app Eco-Bin :</p>
-  <a href="LIEN_VERS_APK" download>
-    <button>Installer Eco-Bin</button>
-  </a>
-  <p class="warning">⚠️ L'application est en phase de prototypage</p>
-  <p>Instructions : si l’installation ne démarre pas, activez “Sources inconnues” dans les paramètres Android.</p>
+  <h1>Bienvenue sur !!</h1>
+  <p>Pour installer l'application Eco-Bin, cliquez sur le bouton ci-dessous :</p>
+  
+  <div class="button-container">
+    <a href="LIEN_VERS_APK" class="download-btn" download>Installer Eco-Bin</a>
+  </div>
+
+  <p class="warning">⚠️ L'application est en phase de prototypage et évoluera avec de nouvelles fonctionnalités.</p>
+  <p class="note">ℹ️ Pour le moment, seuls les utilisateurs Android peuvent télécharger l'application.</p>
+  <p class="note">Si l'installation ne démarre pas, activez “Sources inconnues” dans les paramètres Android.</p>
 </body>
 </html>
